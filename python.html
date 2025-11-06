@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en-US" >
+
+<head>
+<meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0"> 
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1' /><link rel="shortcut icon" href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_favicon.png" type="image/x-icon" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<meta name="theme-color" content="#308D46" />
+<meta name="image" property="og:image" content="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="200">
+<meta property="og:image:height" content="200">
+<meta name="facebook-domain-verification" content="xo7t4ve2wn3ywfkjdvwbrk01pvdond" />
+
+<meta property="og:title" content="Python Tutorial | Learn Python Programming Language - GeeksforGeeks" />
+<meta name="description" content="Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more." />
+<meta property="og:url" content="https://www.geeksforgeeks.org/python/python-programming-language-tutorial/" />
+<meta name="keywords" content="Python programming, web development, data science, AI and ML, Python libraries, Django framework, Flask framework, data structures, object-oriented programming, exception handling, file handling, machine learning libraries, deep learning frameworks, API development, Python coding practice" />
+<meta property="og:site_name" content="GeeksforGeeks" />
+<meta property="og:image" content="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png" />
+<meta property="article:section" content="Python" />
+<meta property="article:tag" content="python" />
+<meta property="article:tag" content="Tutorials" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="en_US" />
+<meta property="article:published_time" content="2024-03-01 13:15:55+00:00" />
+<meta property="article:modified_time" content="2025-11-01 16:42:01+00:00" />
+<meta property="og:updated_time" content="2025-11-01 16:42:01+00:00" />
+<meta property="og:image:secure_url" content="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png" />
+<meta property="og:description" content="Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more." />
+
+<title>Python Tutorial - GeeksforGeeks</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="" />
+<link rel="canonical" href="https://www.geeksforgeeks.org/python/python-programming-language-tutorial/">
+<link rel='dns-prefetch' href='//cdn.geeksforgeeks.org' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		
+		
+<link rel='stylesheet' id='custom-style-css'  href='https://www.geeksforgeeks.org/wp-content/themes/iconic-one/css/gfg.min.css?ver=12.29' type='text/css' media='all' />
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.geeksforgeeks.org/wp-content/uploads/gfg_200X200-100x100.png" sizes="32x32" />
+<link rel="icon" href="https://www.geeksforgeeks.org/wp-content/uploads/gfg_200X200.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.geeksforgeeks.org/wp-content/uploads/gfg_200X200.png" />
+<meta name="msapplication-TileImage" content="https://www.geeksforgeeks.org/wp-content/uploads/gfg_200X200.png" />
+
+
+<link rel='stylesheet' href='python.css' type='text/css' />
+</head>
+
+<body class="post-template-default single single-post postid-1179442 single-format-standard custom-background custom-background-white">
+
+
+
+    
+
+    <nav>
+    <div class="header-main__wrapper">
+        <a class="gfg-stc" style="top:0" href="#main">Skip to content</a>
+
+        <div class="header-main__container">
+            <ul class="header-main-right">
+            
+                <a href="https://www.geeksforgeeks.org/" aria-label="Logo" class="header-main__logo">
+                    <div class="_logo">
+                        <img class="gfg_logo_img" style="height: 30px;" src="https://media.geeksforgeeks.org/gfg-gg-logo.svg" alt="geeksforgeeks">
+                    </div>
+                </a>
+                
+                        <li class="header-main__left-list-item gcse-search_li p-relative" aria-expanded="false" data-expandable="false">
+                    <div class="gcse-form-search-suggestion_wrapper" style="margin-left: 6px">
+                        <form id="gcse-form" class="gcse-form_class p-relative closeChatScreen gcse-form-web" data-sm="true">
+                            <span class="front-search-icon" style="display: block;"><i class="gfg-icon gfg-icon_search gfg-icon_white gcse-search__icon gcse-search-icon_grey"></i> </span>
+                            <input class="gcse-search-input__wrapper" id="gcse-search-input" aria-expanded="true" placeholder="Search..." autocomplete="off" />
+                            <button  aria-label="search" type="submit" class="gcse-search__btn" style="display: none;">
+                                <i class="gfg-icon gfg-icon_search gfg-icon_white gcse-search__icon"></i>
+                            </button>
+                        </form>
+                        <div class="gfg-search-suggestion_wrapper" style="display:none"></div>
+                    <div>
+                </li>
+                 
+            </ul>
+
+        <ul class="header-main__list"><li class="header-main__list-item Header_1" data-parent="false" aria-expanded="true" data-expandable="true"><span>Courses</span><i class="gfg-icon gfg-icon_arrow-down gfg-icon_header"></i><ul class="mega-dropdown Screen_1"><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/courses/category/dsa-placements" target="_self">DSA / Placements</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/courses/category/gate/" target="_self">GATE 2026 Prep</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/courses/category/machine-learning-data-science" target="_self">ML & Data Science</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/courses/category/development-testing" target="_self">Development</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/courses/category/cloud-devops" target="_self">Cloud / DevOps</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/courses/category/programming-languages" target="_self">Programming Languages</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/courses" target="_self">All Courses</a></li></ul></li><li class="header-main__list-item Header_2" data-parent="false" aria-expanded="true" data-expandable="true"><span>Tutorials</span><i class="gfg-icon gfg-icon_arrow-down gfg-icon_header"></i><ul class="mega-dropdown Screen_1"><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/python/python-programming-language-tutorial/" target="_self">Python</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/java/java/" target="_self">Java</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/" target="_self">DSA</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/" target="_self">ML & Data Science</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/interview-corner/" target="_self">Interview Corner</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/programming-language-tutorials/" target="_self">Programming Languages</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/web-technology/" target="_self">Web Development</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/gate-exam-tutorial/" target="_self">GATE</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/articles-on-computer-science-subjects-gq/" target="_self">CS Subjects</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/devops/devops-tutorial/" target="_self">DevOps</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/geeksforgeeks-school/" target="_self">School Learning</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/" target="_self">Software and Tools</a></li></ul></li><li class="header-main__list-item Header_3" data-parent="false" aria-expanded="true" data-expandable="true"><span>Practice</span><i class="gfg-icon gfg-icon_arrow-down gfg-icon_header"></i><ul class="mega-dropdown Screen_1"><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/geeksforgeeks-practice-best-online-coding-platform/" target="_self">Practice Coding Problems</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/nation-skill-up/" target="_self">Nation Skillup- Free Courses</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/problem-of-the-day" target="_self">Problem of the Day</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/studyin-go-global-challenge-2025" target="_self">StudyIn: Global Contest</a></li></ul></li><li class="header-main__list-item Header_4" data-parent="false" aria-expanded="true" data-expandable="true"><span>Jobs</span><i class="gfg-icon gfg-icon_arrow-down gfg-icon_header"></i><ul class="mega-dropdown Screen_1"><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/jobs" target="_self">Apply Now!</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/gfg-hiring-solutions-for-recruiters/" target="_self">Post Jobs</a></li><li class="mega-dropdown__list-item" data-child="true" aria-expanded="false" data-expandable="false"><a href="https://www.geeksforgeeks.org/community/profile/hire1/" target="_self">Jobs Updates</a></li></ul></li></ul>
+        <ul class="header-main__left-list" data-nl="false">
+                                            <li>
+                    <div class="darkMode-wrap" data-mode="Switch to Dark Mode">
+                        <button aria-label="toggle theme" data-gfg-action="toggleGFGTheme">
+                            <div id="darkMode-wrap-red-dot" style="height:12px;width:12px;background-color:#EB2222;border-radius:999999px;position:absolute;top:4px;right:0;display:none;"></div>
+                            <i class="gfg-icon gfg-icon_dark-mode"></i>
+                        </button>
+                        <span id="darkModeTooltipText"></span>
+                    </div>
+                </li>
+
+                
+                
+                    
+<li class="header-main__left-list-item notification-button" style="width: 38px; margin-right: 6px">
+    <div id="toggleButton"  class="notification-main">
+        <div class="button" style="padding: 2px 5px;">
+            <i  id="notification-bell-icon" class="gfg-icon notification-bell-icon"></i>
+            <span class="notification-count" style="display:none"></span>
+        </div>
+        <div id="toast-container" style="position: fixed; top: 20px; right: 20px; z-index: 9999;"></div>
+        <div id="notification" class="notification-container-main">
+            <div class="notification-header hidden">
+                <p>Notifications</p>
+                <div class="mark_all_read hidden">
+                    <span>Mark all as read</span>
+                </div>
+            </div>
+            <div class="notification-category_container hidden">
+                <div class="notification_categories">
+                    <div id="all-notifications" class="notification_categories-inner-container notification-category active active-category"  style="margin-left:11px">
+                        <span id="all-notifications-inner" >All</span>
+                    </div>
+    
+                </div>
+            </div>
+            <div id="notification-content" >
+                <div id="loader" class="loader"></div>
+                <div class="notification-scroll"> </div>
+                    <div class="notification-footer">
+                        <span id="view-all" class=" hidden">View All</span>
+                    </div>
+                </div>
+            </div>
+            <div id="notification-modal" class="notification-modal">
+                <div class="notification_modal_close">
+                    <span id="notification_close_button" class="notification_close_button"></span>
+                </div>
+                <div class="notification-modal-content">
+                    <div class="notification-modal-content-header hidden">
+                        <span class="heading_notification">Notifications</span>
+                        <div class="sorting">
+                            <div class="mark_all_read hidden">
+                                <span class="mark_icon gfg-icon"></span>
+                                <span>Mark all as read</span>
+                            </div>
+                        </div>
+                    </div>
+                <div class="notification-category_container hidden">
+                    <div class="notification_categories">
+                        <div id="all-notifications-modal"  class="notification_categories-inner-container notification-category active-category">
+                            <span id="all-notifications-inner-modal" >All</span>
+                        </div>
+                        <div id="unread-notifications-modal" class="notification_categories-inner-container notification-category ">
+                            <span>Unread</span>
+                        </div>
+                        <div id="read-notifications-modal" class="notification_categories-inner-container notification-category ">
+                            <span>Read</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="zero_notification_content hidden">
+                    <span class="notifications-text">
+                        You're all caught up!!
+                    </span>
+                </div>
+                <div id="loader_modal" class="loader_modal"></div>
+                <div id="notification-content-container">
+                    <div class="notification-modal-scroll">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </li>
+                
+
+                <li id="userProfileId" class="header-main__left-list-item p-relative" aria-expanded="false" data-expandable="false">
+                    </li>
+                            </ul>
+        </div>
+
+        </div>
+    </nav>
+    <div id="header-main__slider-outer-div">
+        <div class="header-main__slider">
+            <button aria-label="sub header slider previous" class="header-main__slider-arrow previous hideIt">
+                <i class="gfg-icon gfg-icon_arrow-left gicon-centered"></i>
+            </button>
+            <ul id="hslider">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="c++.html">C++ Tutorial</a></li>
+                <li><a href="python.html">Python Tutorial</a></li>
+            </ul>
+            <button aria-label="sub header slider next" class="header-main__slider-arrow next hideIt">
+                <i class="gfg-icon gfg-icon_arrow-right gicon-centered"></i>
+            </button>
+            </div>
+         <div class="gcse-form-search-shm">
+    <form id="gcse-form-shm" class="gcse-form_class-shm p-relative " data-sm="false">
+        <span class="front-search-shm-icon">
+            <i class="gfg-icon gfg-icon_search gfg-icon_white gcse-search__icon gcse-search-icon_grey" style="display: none"></i>
+        </span>
+        <input class="gcse-search-input-shm" id="gcse-search-input-shm" aria-expanded="false" placeholder="Search..." autocomplete="off" style="display: none"/>
+        <i class="gfg-icon gfg-icon_times gfg-icon_white hide-search-shm" style="display: none"></i>
+        <button id=sub-header__search aria-label="search" type="button" class="gcse-search-shm__btn not-expanded " style="display:none">
+            <i class="gfg-icon gfg-icon_search gfg-icon_white gcse-search__icon"></i>
+        </button>
+    </form>
+    <div class="gcse-form-search-shm-modal" style="display: none"></div>
+</div>
+
+        <div id="sub-header__signup-outer-div">
+            <button id="sub-header__signup" class="login-modal-btn">Sign In</button>
+        </div>
+    </div>
+    
+    <button id="scrollTopBtn" title="Scroll to Top" type="button" class="btn btn-success">&#x25B2;</button>
+    <div id="main" class="wrapper single-page">
+
+
+
+
+<div id='openInApp-modal' class='openInApp'>
+    <a href = 'https://geeksforgeeksapp.page.link/?link=https://www.geeksforgeeks.org/python-programming-language-tutorial/?type%3Darticle%26id%3D1179442&apn=free.programming.programming&isi=1641848816&ibi=org.geeksforgeeks.GeeksforGeeksDev&efr=1' class='openInAppLink'>
+        <span style='color: #fff;'>Open In App</span>
+    </a>
+</div>
+    
+    
+<div class="container-fluid bg-light" id="home-page" style="position: relative; max-width:100%;">
+    <div class="article-page_flex">
+            <div class="sidebar_wrapper  manual_leftbar ">
+                      <div class="sideBar sticky" >
+                <div class="sideBar--wrap newLeftbar ">
+                <ul class="leftBarList"><div class="first"><li style="background-color: var(--leftbar-explore-section-color) !important;"><a href="https://www.geeksforgeeks.org/connect/explore" style="cursor:pointer;display: block;border-bottom: 1px solid var(--gfg-body-color-alternate); " target="_blank">Explore GfG Connect <span style="background:#357960;float:right;padding:0px 5px;color:#fff;border-radius:10px;margin-right:-9px;margin-top:2px;font-size:13px;">New</span></a></li><li style="background-color: var(--leftbar-explore-section-color) !important;" class="share-experience-modal"><a href="https://write.geeksforgeeks.org/#experiences" style="cursor:pointer;display: block;border-bottom: 1px solid var(--gfg-body-color-alternate);">Share Your Experiences</a></li></div><div class='second'><h2 class="dropdown-title">Python Fundamentals<span class="gfg-icon gfg-icon_arrow-down-thin"></span></h2><div class="dropdown-item" style="display:none;"><a class="" href="https://www.geeksforgeeks.org/python/introduction-to-python/"><p class="leftbar-title">Python Introduction</p></a><a class="" href="https://www.geeksforgeeks.org/python/input-and-output-in-python/"><p class="leftbar-title">Input and Output in Python</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-variables/"><p class="leftbar-title">Python Variables</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-operators/"><p class="leftbar-title">Python Operators</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-keywords/"><p class="leftbar-title">Python Keywords</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-data-types/"><p class="leftbar-title">Python Data Types</p></a><a class="" href="https://www.geeksforgeeks.org/python/conditional-statements-in-python/"><p class="leftbar-title">Conditional Statements in Python</p></a><a class="" href="https://www.geeksforgeeks.org/python/loops-in-python/"><p class="leftbar-title">Loops in Python - For, While and Nested Loops</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-functions/"><p class="leftbar-title">Python Functions</p></a><a class="" href="https://www.geeksforgeeks.org/python/recursion-in-python/"><p class="leftbar-title">Recursion in Python</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-lambda-anonymous-functions-filter-map-reduce/"><p class="leftbar-title">Python Lambda Functions</p></a></div><h2 class="dropdown-title">Python Data Structures<span class="gfg-icon gfg-icon_arrow-down-thin"></span></h2><div class="dropdown-item" style="display:none;"><a class="" href="https://www.geeksforgeeks.org/python/python-string/"><p class="leftbar-title">Python String</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-lists/"><p class="leftbar-title">Python Lists</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-tuples/"><p class="leftbar-title">Python Tuples</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-dictionary/"><p class="leftbar-title">Python Dictionary</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-sets/"><p class="leftbar-title">Python Sets</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-arrays/"><p class="leftbar-title">Python Arrays</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-list-comprehension/"><p class="leftbar-title">List Comprehension in Python</p></a></div><h2 class="dropdown-title">Advanced Python<span class="gfg-icon gfg-icon_arrow-down-thin"></span></h2><div class="dropdown-item" style="display:none;"><a class="" href="https://www.geeksforgeeks.org/python/python-oops-concepts/"><p class="leftbar-title">Python OOP Concepts</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-exception-handling/"><p class="leftbar-title">Python Exception Handling</p></a><a class="" href="https://www.geeksforgeeks.org/python/file-handling-python/"><p class="leftbar-title">File Handling in Python</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-database-tutorial/"><p class="leftbar-title">Python Database Tutorial</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-mongodb-tutorial/"><p class="leftbar-title">Python MongoDB Tutorial</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-mysql/"><p class="leftbar-title">Python MySQL</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-packages/"><p class="leftbar-title">Python Packages</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-modules/"><p class="leftbar-title">Python Modules</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-dsa-libraries/"><p class="leftbar-title">Python DSA Libraries</p></a><a class="" href="https://www.geeksforgeeks.org/python/python3-gui-application-overview/"><p class="leftbar-title">List of Python GUI Library and Packages</p></a></div><h2 class="dropdown-title">Data Science with Python<span class="gfg-icon gfg-icon_arrow-down-thin"></span></h2><div class="dropdown-item" style="display:none;"><a class="" href="https://www.geeksforgeeks.org/python/numpy-tutorial/"><p class="leftbar-title">NumPy Tutorial - Python Library</p></a><a class="" href="https://www.geeksforgeeks.org/pandas/pandas-tutorial/"><p class="leftbar-title">Pandas Tutorial</p></a><a class="" href="https://www.geeksforgeeks.org/python/matplotlib-tutorial/"><p class="leftbar-title">Matplotlib Tutorial</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-seaborn-tutorial/"><p class="leftbar-title">Python Seaborn Tutorial</p></a><a class="" href="https://www.geeksforgeeks.org/data-science/statsmodel-library-tutorial/"><p class="leftbar-title">StatsModel Library - Tutorial</p></a><a class="" href="https://www.geeksforgeeks.org/machine-learning/learning-model-building-scikit-learn-python-machine-learning-library/"><p class="leftbar-title">Learning Model Building in Scikit-learn</p></a><a class="" href="https://www.geeksforgeeks.org/deep-learning/tensorflow/"><p class="leftbar-title">TensorFlow Tutorial</p></a><a class="" href="https://www.geeksforgeeks.org/deep-learning/pytorch-learn-with-examples/"><p class="leftbar-title">PyTorch Tutorial</p></a></div><h2 class="dropdown-title">Web Development with Python<span class="gfg-icon gfg-icon_arrow-down-thin"></span></h2><div class="dropdown-item" style="display:none;"><a class="" href="https://www.geeksforgeeks.org/python/flask-tutorial/"><p class="leftbar-title">Flask Tutorial</p></a><a class="" href="https://www.geeksforgeeks.org/python/django-tutorial/"><p class="leftbar-title">Django Tutorial | Learn Django Framework</p></a><a class="" href="https://www.geeksforgeeks.org/python/django-orm-inserting-updating-deleting-data/"><p class="leftbar-title">Django ORM - Inserting, Updating & Deleting Data</p></a><a class="" href="https://www.geeksforgeeks.org/python/templating-with-jinja2-in-flask/"><p class="leftbar-title">Templating With Jinja2 in Flask</p></a><a class="" href="https://www.geeksforgeeks.org/python/django-templates/"><p class="leftbar-title">Django Templates</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-build-a-rest-api-using-flask/"><p class="leftbar-title">Python | Build a REST API using Flask</p></a><a class="" href="httpswww.geeksforgeeks.org/python/how-to-create-a-basic-api-using-django-rest-framework/"><p class="leftbar-title">How to Create a basic API using Django Rest Framework ?</p></a></div><h2 class="dropdown-title">Python Practice<span class="gfg-icon gfg-icon_arrow-down-thin"></span></h2><div class="dropdown-item" style="display:none;"><a class="" href="https://www.geeksforgeeks.org/python/python-quizzes/"><p class="leftbar-title">Python Quiz</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-coding-practice-problems/"><p class="leftbar-title">Python Coding Practice</p></a><a class="" href="https://www.geeksforgeeks.org/python/python-interview-questions/"><p class="leftbar-title">Python Interview Questions and Answers</p></a></div></div><li style="background-color: var(--leftbar-explore-section-color) !important;"><a href="https://www.geeksforgeeks.org/courses/dsa-to-development-coding-guide">DSA to Development<span style="background: #CCC;float: right;padding: 0px 5px;color: #404040 !important;border-radius: 10px;">Course</span></a></li></ul></div><div id="GFG_AD_Desktop_LeftSideBar_Docked_300x250"></div>            </div>
+             <div id="GFG_AD_Desktop_LeftSideBar_Docked_160x600" style="max-width:160px; max-height:600px"></div>
+        </div>
+                <div class="leftBar">
+            <div class="article--viewer">
+                <div class="article--viewer_content">
+                    <div class="a-wrapper">
+                        <div class="" style="z-index:9999 !important;position:relative;">
+                        </div>
+                         <article class="content post-1179442 post type-post status-publish format-standard hentry category-python category-python-programs tag-python tag-tutorials" id="post-1179442">
+                                                                                    <div style="width:100%; display:flex; justify-content:center;margin: 5px 0;">
+                              <div id="GFG_AD_gfg_direct_728x90"></div>
+                            </div>
+                                                       <div class="main_wrapper" style="display:flex;">
+                                                                <div style="width: 100%;">
+                                        <div class="article-title">
+                                            <h1>Python Tutorial</h1>
+                                        </div>
+                                                                                    <div class="last_updated_parent">
+                                                <div>
+                                                    <span class="strong">Last Updated : </span>
+                                                    <span>05 Nov, 2025</span>
+                                                </div>
+
+                                                 <div class="three_dot_dropdown"> 
+                                                        <div style="display: flex;">
+                                                                                        
+                                         <div pid="1179442" class="article--viewer_share tooltip">
+                                                <div class="three_dot_dropdown_div three_dot_dropdown_share">
+                                                    <div style="display: flex;align-items: center;" class="three_dot_dropdown_inner_div_share" data-gfg-action="share-article" data-bookmark-value="0">
+                                                        <i class="gfg-share-icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                                                                                                                        <div pid="1179442" ptitle="Python Tutorial" class="article--viewer_comment tooltip top-comment-icon-div">
+                                                                    <span class="comment_tooltiptext">Comments</span>
+                                                                    <div class="three_dot_dropdown_div" data-gfg-action='loadComments'>
+                                                                        <div class="comment_header">
+                                                                        <i class= "discussion_button" style="position: relative; transform: scale(0.9);"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div pid="1179442" ptitle="Python Tutorial" class="article--viewer_improve tooltip">
+                                                                <span class="improve_tooltiptext">Improve</span>
+                                                                <div class="three_dot_dropdown_div three_dot_dropdown_improve">
+                                                                    <div class="improve_wrapper_top">
+                                                                    <i class="gfg-icon gfg-icon-pencil  gfg-icon_edit" style="position: relative; z-index: 3;"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div> 
+                                                                                                                    <ul class="dropbtn icons btn-right showLeft">
+                                                            <li>
+                                                                                                                            </li>
+                                                            <li></li>
+                                                            <li></li>
+                                                        </ul>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                                                            </div>
+                                                            </div>
+                            <div id="myDropdown" class="three_dot_dropdown_content">
+                            <div class="article-buttons drop">
+                                            <div pid="1179442" ptitle="Python Tutorial" class="improve_article--viewer tooltip">
+                                                <div class="three_dot_dropdown_div three_dot_dropdown_improve" style="margin-top: 1px;">
+                                                    <div class="three_dot_dropdown_inner_div improve_dot_dropdown_inner_div">
+                                                        <i class="gfg-icon gfg-icon_suggest_changes gfg-icon_edit"></i>
+                                                        <span>Suggest changes</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <div pid="1179442" class="article--viewer_like tooltip">
+                                            <div class="three_dot_dropdown_div three_dot_dropdown_likearticle">
+                                                    <div class="showLikesContainer"> 
+                                                        <span class="likeTooltip">706 Likes</span>
+                                                    </div>
+                                                    <div class="three_dot_dropdown_inner_div" data-gfg-action="like-article" data-bookmark-value="0">
+                                                        <i class="gfg-icon gfg-icon_thumbs"></i>
+                                                        <span>Like</span>
+                                                    </div>
+                                                </div>
+</div>
+                                            
+                                            <div class="article--viewer_report tooltip">
+                                                <div class="three_dot_dropdown_div three_dot_dropdown_reportarticle">
+                                                    <div class="three_dot_dropdown_inner_div" data-gfg-action="report-article">
+                                                        <i class="gfg-icon gfg-icon_report"></i>
+                                                        <span>Report</span>
+                                                    </div>
+                                                </div>
+</div>
+                                            </div>
+                                    </div>
+                            <div class="text">
+                                                                                    
+                <p style="text-align: justify;" dir="ltr"><span>Python is one of the most popular programming languages. Itâ€™s simple to use, packed with features and supported by a wide range of libraries and frameworks. Its clean syntax makes it beginner-friendly.</span><b><strong> </strong></b></p><ul><li value="1"><span>A high-level language, used in web development, data science, automation, AI and more.</span></li><li value="2"><span>Known for its readability, which means code is easier to write, understand and maintain.</span></li><li value="3"><span>Backed by library support, so we donâ€™t have to build everything from scratch.</span></li></ul><gfg-carousel><gfg-carousel-content alt="Applications-of-Python.webp" src="https://media.geeksforgeeks.org/wp-content/uploads/20250625132014941640/Applications-of-Python.webp" width="800" height="401"></gfg-carousel-content><gfg-carousel-content alt="Web-Development.webp" src="https://media.geeksforgeeks.org/wp-content/uploads/20250625132013986944/Web-Development.webp" width="800" height="400"></gfg-carousel-content><gfg-carousel-content alt="Data-Science-Machine-Learning.webp" src="https://media.geeksforgeeks.org/wp-content/uploads/20250625132014474602/Data-Science-Machine-Learning.webp" width="800" height="400"></gfg-carousel-content><gfg-carousel-content alt="Automation-Scripting.webp" src="https://media.geeksforgeeks.org/wp-content/uploads/20250625132014753011/Automation-Scripting.webp" width="800" height="400"></gfg-carousel-content><gfg-carousel-content alt="Web-Scraping.webp" src="https://media.geeksforgeeks.org/wp-content/uploads/20250625132014210678/Web-Scraping.webp" width="800" height="401"></gfg-carousel-content><gfg-carousel-content alt="Game--Development.webp" src="https://media.geeksforgeeks.org/wp-content/uploads/20250625132013753979/Game--Development.webp" width="800" height="401"></gfg-carousel-content><gfg-carousel-content alt="Desktop-Applications.webp" src="https://media.geeksforgeeks.org/wp-content/uploads/20250625132013490041/Desktop-Applications.webp" width="800" height="400"></gfg-carousel-content></gfg-carousel><h2 id="basic-code-example" style="text-align:left"><span>Basic Code Example</span></h2><p dir="ltr"><span>The following is a simple program that displays the message â€œHello, World!â€ on the screen.</span></p><gfg-tabs allow-code-exec=true  data-run-ide="true" data-mode="light">
+            <gfg-tab slot="tab">Python</gfg-tab>
+<gfg-panel slot="panel" data-code-lang="python3" data-main-code-start="None" data-main-code-end="None">
+    <code class="language-python3"><div class=highlight><pre><span></span><span class=c1># Python Program to Print Hello World!</span>
+
+<span class=nb>print</span><span class=p>(</span><span class=s2>&quot;Hello World!&quot;</span><span class=p>)</span>
+</pre></div></code>
+</gfg-panel></gfg-tabs><div class="code-output"><br><strong>Output</strong><pre>Hello World!
+</pre></div><p dir="ltr"><span>To understand working of this code, refer to our article </span><a href="https://www.geeksforgeeks.org/python/introduction-to-python/" target="_blank" rel="noopener"><span>Python Introduction</span></a><span>.</span></p><h2 id="why-to-learn-python" style="text-align:left"><span>Why Learn Python?</span></h2><ul><li value="1"><span>Requires fewer lines of code compared to other programming languages like Java.</span></li><li value="2"><span>Provides Libraries / Frameworks like Django, Flask and many more for Web Development, and Pandas, Tensorflow, Scikit-learn and many more for, AI/ML, Data Science and Data Analysis </span></li><li value="3"><span>Cross-platform, works on Windows, Mac and Linux without major changes.</span></li><li value="4"><span>Used by top tech companies like Google, Netflix and NASA. </span></li><li value="5"><span>Many Python coding job opportunities in Software Development, Data Science and AI/ML.</span></li></ul><blockquote><p dir="ltr"><span>Try our ongoing free course </span><a href="https://www.geeksforgeeks.org/courses/python-skill-up" target="_blank" rel="noopener"><span>Python Skillup</span></a><span> with weekly topic coverage, notes, daily quizzes and coding problems.</span></p></blockquote><h2 id="basics" style="text-align:left"><span>Basics</span></h2><p style="text-align: justify;" dir="ltr"><span>In this section, weâ€™ll cover the basics of Python programming, including installing Python, writing first program, understanding comments and working with variables, keywords and operators. </span></p><blockquote><p dir="ltr"><span>Before starting to learn python we need to</span><a href="https://www.geeksforgeeks.org/python/download-and-install-python-3-latest-version/" target="_blank" rel="noopener"><span> install python</span></a><span> on our system.</span></p></blockquote><ul><li value="1"><a href="https://www.geeksforgeeks.org/python/introduction-to-python/" target="_blank" rel="noopener"><span>Introduction</span></a><span> </span></li><li value="2"><a href="https://www.geeksforgeeks.org/python/python-language-advantages-applications/" target="_blank" rel="noopener"><span>Applications </span></a></li><li value="3"><a href="https://www.geeksforgeeks.org/python/input-and-output-in-python/" target="_blank" rel="noopener"><span>Input and Output</span></a></li><li value="4"><a href="https://www.geeksforgeeks.org/python/python-variables/" target="_blank" rel="noopener"><span>Variables</span></a></li><li value="5"><a href="https://www.geeksforgeeks.org/python/python-operators/" target="_blank" rel="noopener"><span>Operators</span></a></li><li value="6"><b><strong>Quiz: </strong></b><a href="https://www.geeksforgeeks.org/quizzes/python-fundamentals/" target="_blank" rel="noopener"><span>Basics</span></a><span>, </span><a href="https://www.geeksforgeeks.org/quizzes/python-input-output/" target="_blank" rel="noopener"><span>I/O</span></a></li><li value="7"><a href="https://www.geeksforgeeks.org/python/python-keywords/" target="_blank" rel="noopener"><span>Keywords</span></a></li><li value="8"><a href="https://www.geeksforgeeks.org/python/python-data-types/" target="_blank" rel="noopener"><span>Data Types</span></a></li><li value="9"><b><strong>Quiz: </strong></b><a href="https://www.geeksforgeeks.org/quizzes/data-type-gq/" target="_blank" rel="noopener"><span>Data Types</span></a><span>, </span><a href="https://www.geeksforgeeks.org/quizzes/python-numbers-1/" target="_blank" rel="noopener"><span>Numbers</span></a><span>, </span><a href="https://www.geeksforgeeks.org/quizzes/python-boolean-1/" target="_blank" rel="noopener"><span>Boolean</span></a></li><li value="10"><a href="https://www.geeksforgeeks.org/python/conditional-statements-in-python/" target="_blank" rel="noopener"><span>Conditional Statements</span></a></li><li value="11"><a href="https://www.geeksforgeeks.org/python/loops-in-python/" target="_blank" rel="noopener"><span>Loops</span></a></li><li value="12"><b><strong>Quiz: </strong></b><a href="https://www.geeksforgeeks.org/quizzes/python-control-flow-conditional-logic-quiz/" target="_blank" rel="noopener"><span>Control Flow</span></a><span>, </span><a href="https://www.geeksforgeeks.org/quizzes/python-loops/" target="_blank" rel="noopener"><span>Loops</span></a></li></ul><h2 id="2-python-functions" style="text-align:left"><span>Functions</span></h2><p style="text-align: justify;" dir="ltr"><span>In this section of Python 3 tutorial we'll explore Python function syntax, parameter handling, return values and variable scope. Along the way, we'll also introduce versatile functions like range(), map, filter and lambda functions. </span></p><ul><li value="1"><a href="https://www.geeksforgeeks.org/python/python-functions/" target="_blank" rel="noopener"><span>Functions</span></a></li><li value="2"><a href="https://www.geeksforgeeks.org/python/python-pass-statement/" target="_blank" rel="noreferrer noopener"><span>Pass Statement in Function</span></a></li><li value="3"><a href="https://www.geeksforgeeks.org/python/global-local-variables-python/" target="_blank" rel="noreferrer noopener"><span>Global and Local Variables</span></a></li><li value="4"><a href="https://www.geeksforgeeks.org/python/recursion-in-python/" target="_blank" rel="noopener"><span>Recursion</span></a></li><li value="5"><a href="https://www.geeksforgeeks.org/python/args-kwargs-python/" target="_blank" rel="noopener"><span>*args and **kwargs in Function</span></a></li><li value="6"><a href="https://www.geeksforgeeks.org/python/why-python-uses-self-as-default-argument/" target="_blank" rel="noopener"><span>â€˜Selfâ€™ as Default Argument</span></a></li><li value="7"><a href="https://www.geeksforgeeks.org/python/first-class-functions-python/" target="_blank" rel="noopener"><span>First Class Function</span></a></li><li value="8"><a href="https://www.geeksforgeeks.org/python/python-lambda-anonymous-functions-filter-map-reduce/" target="_blank" rel="noreferrer noopener"><span>Lambda Function</span></a></li><li value="9"><a href="https://www.geeksforgeeks.org/python/python-map-function/" target="_blank" rel="noreferrer noopener"><span>Map</span></a><span>, </span><a href="https://www.geeksforgeeks.org/python/reduce-in-python/" target="_blank" rel="noreferrer noopener"><span>Reduce </span></a><span>and </span><a href="https://www.geeksforgeeks.org/python/filter-in-python/" target="_blank" rel="noreferrer noopener"><span>Filter Function</span></a></li><li value="10"><a href="https://www.geeksforgeeks.org/python/python-inner-functions/" target="_blank" rel="noopener"><span>Inner Function</span></a></li><li value="11"><a href="https://www.geeksforgeeks.org/python/decorators-in-python/" target="_blank" rel="noopener"><span>Decorators</span></a></li><li value="12"><b><strong>Quiz: </strong></b><a href="https://www.geeksforgeeks.org/quizzes/functions-python-gq/" target="_blank" rel="noopener"><span>Functions</span></a></li></ul><h2 id="3-python-data-structures" style="text-align:left"><span>Data Structures</span></h2><p style="text-align: justify;" dir="ltr"><span>Python offers versatile collections of data types, including lists, string, tuples, sets, dictionaries and arrays. In this section, we will learn about each data types in detail.</span></p><ul><li value="1"><a href="https://www.geeksforgeeks.org/python/python-string/" target="_blank" rel="noopener"><span>Strings</span></a></li><li value="2"><a href="https://www.geeksforgeeks.org/python/python-lists/" target="_blank" rel="noopener"><span>List</span></a></li><li value="3"><b><strong>Quiz:</strong></b><a href="https://www.geeksforgeeks.org/quizzes/python-list-quiz/" target="_blank" rel="noopener"><span> List</span></a><span>, </span><a href="https://www.geeksforgeeks.org/quizzes/python-string-quiz/" target="_blank" rel="noopener"><span>String</span></a></li><li value="4"><a href="https://www.geeksforgeeks.org/python/python-tuples/" target="_blank" rel="noopener"><span>Tuples</span></a></li><li value="5"><a href="https://www.geeksforgeeks.org/python/python-dictionary/" target="_blank" rel="noopener"><span>Dictionary</span></a></li><li value="6"><b><strong>Quiz: </strong></b><a href="https://www.geeksforgeeks.org/quizzes/python-tuples-quiz/" target="_blank" rel="noopener"><span>Tuples</span></a><span>, </span><a href="https://www.geeksforgeeks.org/quizzes/python-dictionary-quiz/" target="_blank" rel="noopener"><span>Dictionary</span></a></li><li value="7"><a href="https://www.geeksforgeeks.org/python/python-sets/" target="_blank" rel="noopener"><span>Sets</span></a></li><li value="8"><a href="https://www.geeksforgeeks.org/python/python-arrays/" target="_blank" rel="noopener"><span>Arrays</span></a></li><li value="9"><a href="https://www.geeksforgeeks.org/python/python-list-comprehension/" target="_blank" rel="noopener"><span>List Comprehension</span></a></li><li value="10"><b><strong>Quiz: </strong></b><a href="https://www.geeksforgeeks.org/quizzes/python-sets-quiz/" target="_blank" rel="noopener"><span>Sets</span></a><span>, </span><a href="https://www.geeksforgeeks.org/quizzes/python-arrays-1/" target="_blank" rel="noopener"><span>Arrays</span></a><span>, </span><a href="https://www.geeksforgeeks.org/quizzes/python-list-comprehension-quiz/" target="_blank" rel="noopener"><span>List Comprehension</span></a></li></ul><p style="text-align: justify;" dir="ltr"><span>Python's collections module offers essential data structures, including the following:</span></p><ul><li value="1"><a href="https://www.geeksforgeeks.org/python/counters-in-python-set-1/" target="_blank" rel="noopener"><span>Counters</span></a></li><li value="2"><a href="https://www.geeksforgeeks.org/python/heap-queue-or-heapq-in-python/" target="_blank" rel="noopener"><span>Heapq</span></a></li><li value="3"><a href="https://www.geeksforgeeks.org/python/deque-in-python/" target="_blank" rel="noopener"><span>Deque</span></a></li><li value="4"><a href="https://www.geeksforgeeks.org/python/ordereddict-in-python/" target="_blank" rel="noopener"><span>OrderedDict</span></a></li><li value="5"><a href="https://www.geeksforgeeks.org/python/defaultdict-in-python/" target="_blank" rel="noopener"><span>Defaultdict</span></a></li><li value="6"><b><strong>Quiz: </strong></b><a href="https://www.geeksforgeeks.org/quizzes/python-collection-counters/" target="_blank" rel="noopener"><span>Counters</span></a><span>, </span><a href="https://www.geeksforgeeks.org/quizzes/python-heapq/" target="_blank" rel="noopener"><span>Heapq</span></a><span>, </span><a href="https://www.geeksforgeeks.org/quizzes/python-deque/" target="_blank" rel="noopener"><span>Deque</span></a><span>, </span><a href="https://www.geeksforgeeks.org/quizzes/python-ordereddict/" target="_blank" rel="noopener"><span>OrderedDict</span></a></li></ul><blockquote><p dir="ltr"><span>To learn data structure and algorithm with python in detail, you can refer to our </span><a href="https://www.geeksforgeeks.org/dsa/python-data-structures-and-algorithms/" target="_blank" rel="noopener"><span>DSA with Python</span></a><span> Tutorial.</span></p></blockquote><h2 id="4-python-oops-concepts" style="text-align:left"><span>OOP Concepts</span></h2><p style="text-align: justify;" dir="ltr"><span>In this section, we'll explore the core principles of object-oriented programming (OOP) in Python. From encapsulation to inheritance, polymorphism, abstract classes and iterators, we'll cover the essential concepts that helps you to build modular, reusable and scalable code. </span></p><ul><li value="1"><a href="https://www.geeksforgeeks.org/python/python-oops-concepts/" target="_blank" rel="noopener"><span>Python OOP</span></a></li><li value="2"><a href="https://www.geeksforgeeks.org/python/python-classes-and-objects/" target="_blank" rel="noopener"><span>Classes and Objects</span></a></li><li value="3"><a href="https://www.geeksforgeeks.org/python/polymorphism-in-python/" target="_blank" rel="noopener"><span>Polymorphism</span></a></li><li value="4"><a href="https://www.geeksforgeeks.org/python/inheritance-in-python/" target="_blank" rel="noopener"><span>Inheritance</span></a></li><li value="5"><a href="https://www.geeksforgeeks.org/python/data-abstraction-in-python/" target="_blank" rel="noopener"><span>Abstraction</span></a></li><li value="6"><a href="https://www.geeksforgeeks.org/python/encapsulation-in-python/" target="_blank" rel="noopener"><span>Encapsulation</span></a></li><li value="7"><a href="https://www.geeksforgeeks.org/python/iterators-in-python/" target="_blank" rel="noopener"><span>Iterators</span></a></li><li value="8"><b><strong>Quiz: </strong></b><a href="https://www.geeksforgeeks.org/quizzes/python-oops-quiz/" target="_blank" rel="noopener"><span>OOP</span></a></li></ul><h2 id="5-python-exception-handling" style="text-align:left"><span>Exception Handling</span></h2><p style="text-align: justify;" dir="ltr"><span>In this section, we'll explore Python Exception Handling that how Python deals with unexpected errors, enabling us to write fault-tolerant code. We'll cover file handling, including reading from and writing to files.</span></p><ul><li value="1"><a href="https://www.geeksforgeeks.org/python/python-exception-handling/" target="_blank" rel="noopener"><span>Exception Handling</span></a><span> </span></li><li value="2"><a href="https://www.geeksforgeeks.org/python/built-exceptions-python/" target="_blank" rel="noopener"><span>Built-in Exception</span></a></li><li value="3"><a href="https://www.geeksforgeeks.org/python/user-defined-exceptions-python-examples/" target="_blank" rel="noopener"><span>User defined Exception</span></a></li><li value="4"><b><strong>Quiz: </strong></b><a href="https://www.geeksforgeeks.org/quizzes/python-exception-handling-quiz/" target="_blank" rel="noopener"><span>Exception Handling</span></a></li></ul><h2 id="6-file-handling" style="text-align:left"><span>File Handling</span></h2><p dir="ltr"><span>In this section, we will cover file handling, including reading from and writing to files.</span></p><ul><li value="1"><a href="https://www.geeksforgeeks.org/python/file-handling-python/" target="_blank" rel="noopener"><span>File Handling</span></a><span> </span></li><li value="2"><a href="https://www.geeksforgeeks.org/python/how-to-read-from-a-file-in-python/" target="_blank" rel="noopener"><span>Read Files</span></a></li><li value="3"><a href="https://www.geeksforgeeks.org/python/writing-to-file-in-python/" target="_blank" rel="noopener"><span>Write/Create Files</span></a></li><li value="4"><a href="https://www.geeksforgeeks.org/python/os-module-python-examples/" target="_blank" rel="noopener"><span>OS Module</span></a></li><li value="5"><a href="https://www.geeksforgeeks.org/python/pathlib-module-in-python/" target="_blank" rel="noopener"><span>pathlib Module</span></a></li><li value="6"><a href="https://www.geeksforgeeks.org/python/python-directory-management/" target="_blank" rel="noopener"><span>Directory Management</span></a></li><li value="7"><b><strong>Quiz: </strong></b><a href="https://www.geeksforgeeks.org/quizzes/python-file-handling-quiz/" target="_blank" rel="noopener"><span>File Handling</span></a></li></ul><h2 id="7-python-database-handling" style="text-align:left"><span>Database Handling</span></h2><p dir="ltr"><span>In this section we will learn how to access and work with MySQL and MongoDB databases</span></p><ul><li value="1"><a href="https://www.geeksforgeeks.org/python/python-mongodb-tutorial/" target="_blank" rel="noopener"><span>Python MongoDB Tutorial</span></a></li><li value="2"><a href="https://www.geeksforgeeks.org/python/python-mysql/" target="_blank" rel="noopener"><span>Python MySQL Tutorial</span></a></li></ul><h2 id="8-python-packages-or-libraries" style="text-align:left"><span>Packages or Libraries</span></h2><p style="text-align: justify;" dir="ltr"><span>Python is a huge collection of Python Packages standard libraries that make development easier. These libraries help with a wide range of tasks and can save you a lot of time by providing ready-to-use tools.</span></p><p dir="ltr"><span>Some commonly used types of libraries in Python include:</span></p><ul><li value="1"><a href="https://www.geeksforgeeks.org/python/python-packages/" target="_blank" rel="noopener"><span>Packages</span></a></li><li value="2"><a href="https://www.geeksforgeeks.org/python/python-modules/" target="_blank" rel="noopener"><span>Built-in Modules </span></a></li><li value="3"><a href="https://www.geeksforgeeks.org/python/python-dsa-libraries/" target="_blank" rel="noopener"><span>DSA Libraries</span></a></li><li value="4"><a href="https://www.geeksforgeeks.org/python/python3-gui-application-overview/" target="_blank" rel="noopener"><span>GUI Libraries</span></a></li></ul><h2 id="9-data-science-with-python" style="text-align:left"><span>Data Science </span></h2><p dir="ltr"><b><strong>1. Foundational Libraries</strong></b><span>: These are the libraries that form the base for all data science work. Start here to build a strong foundation.</span></p><ul><li value="1"><a href="https://www.geeksforgeeks.org/python/numpy-tutorial/" target="_blank" rel="noopener"><span>NumPy</span></a></li><li value="2"><a href="https://www.geeksforgeeks.org/pandas/pandas-tutorial/" target="_blank" rel="noopener"><span>Pandas</span></a></li><li value="3"><a href="https://www.geeksforgeeks.org/python/matplotlib-tutorial/" target="_blank" rel="noopener"><span>Matplotlib</span></a></li></ul><p dir="ltr"><b><strong>2. Advanced Visualization and Statistical Tools: </strong></b><span>Once youâ€™re comfortable with basic data handling and visualization, move to creating cleaner visuals and performing statistical analysis.</span></p><ul><li value="1"><a href="https://www.geeksforgeeks.org/python/python-seaborn-tutorial/" target="_blank" rel="noopener"><span>Seaborn</span></a></li><li value="2"><a href="https://www.geeksforgeeks.org/data-science/statsmodel-library-tutorial/" target="_blank" rel="noopener"><span>Statsmodel</span></a></li></ul><p dir="ltr"><b><strong>3. Machine Learning Libraries:</strong></b><span> After data manipulation and visualization, learn machine learning, starting with simpler models and moving to advanced ones.</span></p><ul><li value="1"><a href="https://www.geeksforgeeks.org/machine-learning/learning-model-building-scikit-learn-python-machine-learning-library/" target="_blank" rel="noopener"><span>Scikit-learn</span></a></li><li value="2"><a href="https://www.geeksforgeeks.org/machine-learning/xgboost/" target="_blank" rel="noopener"><span>XGBoost</span></a><span> /</span><a href="https://www.geeksforgeeks.org/machine-learning/lightgbm-light-gradient-boosting-machine/" target="_blank" rel="noopener"><span>LightGBM</span></a></li></ul><p dir="ltr"><span>4. </span><b><strong>Deep Learning Frameworks:</strong></b><span> If youâ€™re interested in AI and deep learning, these libraries will allow you to build and train neural networks.</span></p><ul><li value="1"><a href="https://www.geeksforgeeks.org/deep-learning/tensorflow/" target="_blank" rel="noopener"><span>TensorFlow</span></a><span> and </span><a href="https://www.geeksforgeeks.org/deep-learning/what-is-keras/" target="_blank" rel="noopener"><span>Keras</span></a></li><li value="2"><a href="https://www.geeksforgeeks.org/deep-learning/pytorch-learn-with-examples/" target="_blank" rel="noopener"><span>PyTorch</span></a></li></ul><blockquote><p dir="ltr"><span>To learn more, you can refer to </span><a href="https://www.geeksforgeeks.org/data-science/data-science-with-python-tutorial/" target="_blank" rel="noopener"><span>Python for Data Science</span></a><span>.</span></p></blockquote><h2 id="10-web-development-with-python" style="text-align:left"><span>Web Development </span></h2><p dir="ltr"><b><strong>1. Core Web Frameworks (Backend Development with Python): </strong></b><span>These are the tools for building Python-based web applications.</span></p><ul><li value="1"><a href="https://www.geeksforgeeks.org/python/flask-tutorial/" target="_blank" rel="noopener"><span>Flask</span></a></li><li value="2"><a href="https://www.geeksforgeeks.org/python/django-tutorial/" target="_blank" rel="noopener"><span>Django</span></a></li></ul><p dir="ltr"><b><strong>2. Database Integration:</strong></b><span> Learn how to connect Python web frameworks to databases for storing and retrieving data.</span></p><ul><li value="1"><a href="httpsIg"https://www.geeksforgeeks.org/sqlite/sqlite-tutorial/" target="_blank" rel="noopener"><span>SQLite</span></a></li><li value="2"><a href="https://www.geeksforgeeks.org/python/sqlalchemy-introduction/" target="_blank" rel="noopener"><span>SQLAlchemy</span></a></li><li value="3"><a href="https://www.geeksforgeeks.org/python/django-orm-inserting-updating-deleting-data/" target="_blank" rel="noopener"><span>Django ORM</span></a></li></ul><p dir="ltr"><b><strong>3. Front-End and Backend Integration: </strong></b><span>Learn how to connect Python backends with front-end technologies to create dynamic, full-stack web applications.</span></p><ul><li value="1"><a href="https://www.geeksforgeeks.org/python/templating-with-jinja2-in-flask/" target="_blank" rel="noopener"><span>Jinja2 (Flask)</span></a></li><li value="2"><a href="https://www.geeksforgeeks.org/python/django-templates/" target="_blank" rel="noopener"><span>Django Templates</span></a></li></ul><p dir="ltr"><b><strong>4. API Development: </strong></b><span>Learn to build APIs (Application Programming Interfaces) for connecting your backend with front-end apps or other services.</span></p><ul><li value="1"><a href="httpsww.geeksforgeeks.org/python/python-build-a-rest-api-using-flask/" target="_blank" rel="noopener"><span>Flask-RESTful</span></a></li><li value="2"><a href="https://www.geeksforgeeks.org/python/how-to-create-a-basic-api-using-django-rest-framework/" target="_blank" rel="noopener"><span>Django REST Framework (DRF)</span></a></li></ul><blockquote><p dir="ltr"><span>To learn more, you can refer to </span><a href="https-www.geeksforgeeks.org/python/python-web-development/" target="_blank" rel="noopener"><span>Python for Web Development.</span></a></p></blockquote><h2 id="python-practice" style="text-align:left"><span>Practice</span></h2><p dir="ltr"><span>Python quiz page covers topics including variables, data types, input, output, lists, tuples, dictionaries and sets. The Python Coding Practice Problems page offers exercises on loops, functions, lists, strings, dictionaries, sets and advanced structures like heaps and deques. </span></p><ul><li value="1"><a href="https://www.geeksforgeeks.org/python/python-quizzes/" target="_blank" rel="noopener"><span>Quizzes</span></a></li><li value="2"><a href="https://www.geeksforgeeks.org/python/python-exercises-practice-questions-and-solutions/" target="_blank" rel="noopener"><span>Python Coding Problems</span></a></li></ul><blockquote><p dir="ltr"><span>    This Python tutorial is updated based on latest Python 3.13.1 version.</span></p></blockquote>                                
+                                
+
+                            <div class='article_bottom_text'></div><br>
+                                                            <div id="video-tab-content">
+                                                    
+                <div id="#GFG_AD_InContent_Desktop_728x280" style="display: flex; width: 100%; justify-content: center;">
+    <div id="video-iframe-container" style="display: flex; flex-direction: column; align-items: center;">
+        <iframe
+            id="video-iframe"
+            src="https://aa.geeksforgeeks.org/instream/video.html"
+            width="640"
+            height="380"
+            frameborder="0"
+            allowfullscreen
+            allow="autoplay"
+            referrerpolicy="origin"
+        ></iframe>
+        
+        <div id="video-info-container">
+            <div id="video-info-container-title" style="width:72%; text-align: left; color: var(--similar-read-title-color); font-size: 20px; font-family: var(--font-primary); padding-right: 10px;">Python Introduction</div>
+            <a id="video-info-container-course-link"
+            href="https://www.geeksforgeeks.org/courses/master-python-complete-beginner-to-advanced"
+            target="_blank"
+            style="display: flex; align-items: center; justify-content: center; background: var(--discussion-button-color); border: 1px solid var(--discussion-button-color); border-radius: 12px; height: 30px; max-width: 200px; padding: 0 15px; box-sizing: border-box; cursor: pointer; text-decoration: none; font-size: 14px; font-family: var(--font-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                <span style="color: #FFFFFF; padding-left: 10px;">Visit Course</span>
+                <img src="https://media.geeksforgeeks.org/auth-dashboard-uploads/Vector11.svg"
+                    alt="explore course icon"
+                    style="width: auto; height: 10px; margin-left: 5px;" />
+            </a>
+        </div>
+    </div>
+        <div id="video-playlist-container" style="width: 350px; height: 360px; overflow-y: scroll; margin-top: 8px; padding-left: 5px;">
+        
+            <div id="playlist-video-tile-4041" class="playlist-video-tile" data-video-id="4041" style="display: flex; align-items: center; margin-bottom: 10px; cursor: pointer;">
+                <img class="restrict-popup-gfg" src="https://media.geeksforgeeks.org/courses/PythonIntroduction/PythonIntroduction20241108170605-small.png" alt="Video Thumbnail" style="width: 160px; height: 90px; border-radius: 12px; margin-right: 10px;" />
+                <h2 style="font-size: 14px; padding: 5px;">Python Introduction</h2>
+            </div>
+            
+            <div id="playlist-video-tile-4037" class="playlist-video-tile" data-video-id="4037" style="display: flex; align-items: center; margin-bottom: 10px; cursor: pointer;">
+                <img class="restrict-popup-gfg" src="https://media.geeksforgeeks.org/courses/HowPythonProgramsareExecuted/HowPythonProgramsareExecuted20241108170233-small.png" alt="Video Thumbnail" style="width: 160px; height: 90px; border-radius: 12px; margin-right: 10px;" />
+                <h2 style="font-size: 14px; padding: 5px;">How Python Programs are Executed</h2>
+            </div>
+            
+            <div id="playlist-video-tile-3969" class="playlist-video-tile" data-video-id="3969" style="display: flex; align-items: center; margin-bottom: 10px; cursor: pointer;">
+                <img class="restrict-popup-gfg" src="https://media.geeksforgeeks.org/courses/CommentsinPython/CommentsinPython20241108170732-small.png" alt="Video Thumbnail" style="width: 160px; height: 90px; border-radius: 12px; margin-right: 10px;" />
+                <h2 style="font-size: 14px; padding: 5px;">Comments in Python</h2>
+            </div>
+            
+            <div id="playlist-video-tile-3956" class="playlist-video-tile" data-video-id="3956" style="display: flex; align-items: center; margin-bottom: 10px; cursor: pointer;">
+                <img class="restrict-popup-gfg" src="https://media.geeksforgeeks.org/courses/VariablesinPython/VariablesinPython20241108171348-small.png" alt="Video Thumbnail" style="width: 160px; height: 90px; border-radius: 12px; margin-right: 10px;" />
+                <h2 style="font-size: 14px; padding: 5px;">Variables in Python</h2>
+            </div>
+            
+            <div id="playlist-video-tile-3981" class="playlist-video-tile" data-video-id="3981" style="display: flex; align-items: center; margin-bottom: 10px; cursor: pointer;">
+                <img class="restrict-popup-gfg" src="https://media.geeksforgeeks.org/courses/ListIntroduction/ListIntroduction20241108171840-small.png" alt="Video Thumbnail" style="width: 160px; height: 90px; border-radius: 12px; margin-right: 10px;" />
+                <h2 style="font-size: 14px; padding: 5px;">List Introduction</h2>
+            </div>
+            
+            <div id="playlist-video-tile-3987" class="playlist-video-tile" data-video-id="3987" style="display: flex; align-items: center; margin-bottom: 10px; cursor: pointer;">
+                <img class="restrict-popup-gfg" src="https://media.geeksforgeeks.org/courses/SetinPython/Setsinpython20241106105252-small.png" alt="Video Thumbnail" style="width: 160px; height: 90px; border-radius: 12px; margin-right: 10px;" />
+                <h2 style="font-size: 14px; padding: 5px;">Set in Python</h2>
+            </div>
+            </div></div>                                </div>
+                                                        <div class="d-row content-bw "style="margin-top: 20px;">
+                            <div class="article-pgnavi_prev"><div class="comment_div" data-title="Comments"><button class="author_footer_btn" data-gfg-action="loadComments">
+    <div class='discussion_panel'>
+        <i class='discussion_button'>
+        </i>
+        Comment
+    </div></button></div>
+                                    <div class="author-inline-details">
+                                        <div class="article-meta-author-details">
+                                            <div class="article-meta-author-details-block">
+                                                <div class="article-meta-author-details-profile-display">
+                                                    <div class="author_info">
+                                                        <div class="article-meta-author-details-profile-display-icon"><a href="https://www.geeksforgeeks.org/user/kartik/" style="text-decoration: none;"><div class="image-wrap" style="position: relative"><p class="profileCard-profile-picture" style="background-color:#B3EFD3;  margin:0px;">K</p>
+        <div style="position: absolute;top: -35px; left: -13px;">
+            <i class="gfg-badge-icon md master"></i>
+        </div>
+        </div>
+</a></div>
+                                                        <div class="article-meta-author-details-profile-display-name"><a aria-label="author profile" href="https://www.geeksforgeeks.org/user/kartik/" style="display: block;overflow: hidden;width: 65px;text-decoration: none;text-overflow: ellipsis;color: var(--gfg-title-color);font-weight: bold;white-space: nowrap;">kartik</a></div>
+                                                    </div><div class="author_follow_btn">
+                                             <div class="article-meta-author-details-follow-button">
+            <div class="follow-container">
+            <div class="follow-btn" >
+<button id="followAuthor" type="button" value="kartik">
+<span role="img" aria-label="plus" class="plus-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="plus" width="1em" height="1em" fill="currentColor" aria-hidden="true"><defs></defs><path d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"></path><path d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"></path></svg></span> <span style="
+    font-family: Nunito,sans-serif;
+">Follow</span></button></div></div></div>
+                                           </div></div>
+                                            </div>
+                                            <div class="article_bottom_suggestion_wrapper">
+                                                <div pid="1179442" class="article--viewer_like tooltip tooltipBottom" data-title="Like Article">
+                                                    <button id="likeButton" aria-label="like article" data-gfg-action="like-article" data-bookmark-value="0" data-liked="false" style="color: #5B5A5A !important; display: flex; align-items: center; background-color: unset; margin: 0px !important; padding: 5px 0px;">
+                                                        <i class="author-badge-like-button"></i>
+                                                        <figure id="likeCount" style="margin-left: 3px; margin-top: 4px; color: var(--like-count-color); font-family: Nunito,sans-serif;  font-size: 14px; font-weight: 600;" class="favoriteText">706</figure>
+                                                    </button>
+                                                </div><div class="article_bottom_suggestion" data-title="Improve">
+                                             <span class="improveTooltipBottom">Improve</span>
+                                             <i class="author-badge-improvement-button"></i>
+                                           </div></div>
+                                        </div>
+                                    </div>                            </div>
+                        <div class="more-info" style="display: flex;flex-direction: column;">
+                            <div class="article-meta-author-details" style="display: none">
+                                        <div class="article-meta-author-details-block">
+                                            <div class="article-meta-author-details-profile-display">
+                                                <div class="author_info">
+                                                <div class="article-meta-author-details-profile-display-icon">
+                                                    <a href="https://www.geeksforgeeks.org/user/kartik/" style="text-decoration: none;"><div class="image-wrap" style="position: relative"><p class="profileCard-profile-picture" style="background-color:#B3EFD3;  margin:0px;">K</p>
+        <div style="position: absolute;top: -35px; left: -13px;">
+            <i class="gfg-badge-icon md master"></i>
+        </div>
+        </div>
+</a>                                                </div>
+                                                <div class="article-meta-author-details-profile-display-name" >
+                                                    <a aria-label="author profile" href="https://www.geeksforgeeks.org/user/kartik/" style="display: block;overflow: hidden;width: 65px;text-decoration: none;text-overflow: ellipsis;color: var(--gfg-title-color);font-weight: bold;white-space: nowrap;">kartik</a>                                                </div>
+                                                </div>
+                                                <div class="author_follow_btn"><div class="article-meta-author-details-follow-button">
+            <div class="follow-container">
+            <div class="follow-btn" >
+<button id="followAuthor" type="button" value="kartik">
+<span role="img" aria-label="plus" class="plus-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="plus" width="1em" height="1em" fill="currentColor" aria-hidden="true"><defs></defs><path d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"></path><path d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"></path></svg></span> <span style="
+    font-family: Nunito,sans-serif;
+">Follow</span></button></div></div></div></div>                                            </div>
+                                            
+                                        </div>
+                                        <div class="article_bottom_suggestion_wrapper">
+                                            <div pid="1179442" class="article--viewer_like tooltip tooltipBottom" data-title="Like Article">
+                                                <button id="likeButton" aria-label="like article" data-gfg-action="like-article" data-bookmark-value="0" data-liked="false" style="color: #5B5A5A !important; display: flex; align-items: center; background-color: unset; margin: 0px !important; padding: 5px 0px;">
+                                                    <i class="author-badge-like-button"></i>
+                                                    <figure id="likeCount" style="margin-left: 3px; margin-top: 4px; color: var(--like-count-color); font-size: 14px; font-weight: 600;" class="favoriteText">706</figure>
+                                                </button>
+                                            </div>
+                                            
+                                                                            <div class="article_bottom_suggestion" data-title="Improve">
+                                    <span class="improveTooltipBottom">Improve</span>
+                                    <i class="author-badge-improvement-button"></i>
+                                </div>
+                            
+                                        </div>
+                        </div>
+                        
+                                                <div class="bottom-wrap" style="">
+                                                            <div class="improved">
+                                    <div class="t-head">Article Tags : </div>
+                                    <ul>
+                                        
+            <li style="border-radius: 25px;" class="">
+                <a href="https://www.geeksforgeeks.org/category/programming-language/python/">Python</a>
+            </li>
+            <li style="border-radius: 25px;" class="">
+                <a href="https://www.geeksforgeeks.org/category/programming-language/python/python-programs/">Python Programs</a>
+            </li>
+            <li style="border-radius: 25px;" class="">
+                <a href="https://www.geeksforgeeks.org/tag/python/">python</a>
+            </li>
+            <li style="border-radius: 25px;" class="">
+                <a href="https://www.geeksforgeeks.org/tag/tutorials/">Tutorials</a>
+            </li>                                    </ul>
+                                                                    </div>
+                                                                                </div>
+                                                </div>
+
+                                                </article>
+                        
+                        
+
+
+                                                <div class="vote-wrap">
+                                <div style="display:none;align-items:center;justify-content:center;width:100%;">
+                                    <button aria-label="like" data-type="like" class="vote-this" style="margin-right: 0; margin-left:0 ;">
+                                        <i class="gfg-icon gfg-icon_like favoriteIcon"></i>
+                                        <span class="favoriteLike">Like</span>
+                                        <figure class="favoriteText"></figure>
+                                    </button>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                            <div class="article-meta">
+                                                                                    <div class="bottom-wrap">
+                              <div id="GFG_AD_InContent_Desktop_BTF_650x250" style="text-align:center;max-height: 300px;"></div>
+                            </div>
+                                                        </div>
+                    </div>
+                </div>
+            </div>
+                <div id="report_modal_content" class="report_modal_content" style="display:hidden;"></div>
+        <div class="onopen-discussion-panel">
+            <div class="discussion-tab">
+                <div class="discussion_heading">
+                    <div></div>
+                    <i class="gfg-icon close-tab-icon"></i>
+                </div> 
+                <div class="discussion_content">                            <div style="height:100%">
+                                <div style="height:100%" id="comment-system"></div>
+                            </div>
+
+                            
+</div>
+            </div>
+        </div>  
+
+        <div class="rightBar" style="padding-right: 5px;">
+                
+
+
+<div id="secondary" class="widget-area">
+	<div class='june2024SaleRightBarBanner' id='rightBarSaleBanner'></div>
+	<aside id="text-15" class="widget widget_text">
+		<div class="textwidget">
+					<div id="_GFG_ABP_Desktop_RightSideBar_ATF_300x600_2"></div>
+			<div id="GFG_AD_Desktop_RightSideBar_ATF_300x250_2" style="min-width: 300px;margin-bottom:10px;"></div>
+			<div class="ads-carousel-container">
+				<div class="ads-carousel-track" id="adsCarouselTrack">
+					<div id="GFG_AD_Desktop_RightSideBar_Carousel_AD1_300x250" class="ads-slide"></div>
+					<div id="GFG_AD_Desktop_RightSideBar_Carousel_AD2_300x250" class="ads-slide"></div>
+					<div id="GFG_AD_Desktop_RightSideBar_Carousel_AD3_300x250" class="ads-slide"></div>
+				</div>
+			</div>
+
+			<div class="carousel-dots" id="carouselDots">
+				<div class="dot active"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+			</div>
+			<div id='GFG_AD_Desktop_RightSideBar_ATF_300x600' style='min-width: 300px; min-height: 600px;margin-bottom:10px;'></div>
+					</div>
+	</aside>
+
+	<aside id="text-16" class="widget widget_text">
+		<div class="textwidget">
+					<div id="_GFG_ABP_Desktop_RightSideBar_MTF_300x600"></div>
+			<div id='GFG_AD_Desktop_RightSideBar_MTF_300x250' style='min-width: 300px;'></div>
+			<div id="_GFG_ABP_Desktop_RightSideBar_BTF_300x600"></div>
+			<div id="_GFG_ABP_Desktop_RightSideBar_BTF_300x600_3"></div>
+				</div>
+	</aside>
+	<div class='whats-new-section'><div><div class='rba_all_pages' id='whatsNewCardContainer'><div class='card-layout-parent'> 
+						<div class='arrow-icon'>
+							<i class='gfg-icon left-arrow-img'></i>
+							<i class='gfg-icon right-arrow-img'></i>
+						</div>
+						<div class='component'>
+							<div class='carousel'>
+					<div class="new-card-layout">
+							<div class="new-content-wrapper"> 
+								<a href="https://www.geeksforgeeks.org/courses/gate-cse-2027-semester-placement">
+									<div class="new-card-content">
+										<div class="new-card-thumbnail">
+											  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20241230002535674344/file.webp" alt="course-img" class="card-image" >
+										</div>
+										<div class="card-description-grid">
+											<div class="grid1">
+												<div class="grid1-interested">
+													<span class="interested-text">5k+ interested Geeks </span>
+												</div>
+											</div>
+											<div class="grid2-div">
+												<strong class="grid2-description-heading">GATE CSE 2027 [Semester & Placement Preparation] </strong>
+											</div>
+											<div class="grid3">
+												<div class="grid3-course-explore">
+												<button class="explore-course">Explore</button> 
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class="new-card-layout">
+							<div class="new-content-wrapper"> 
+								<a href="https://www.geeksforgeeks.org/courses/full-stack-applied-data-science-program">
+									<div class="new-card-content">
+										<div class="new-card-thumbnail">
+											  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20251022120928915078/ML1WEBP.webp" alt="course-img" class="card-image" >
+										</div>
+										<div class="card-description-grid">
+											<div class="grid1">
+												<div class="grid1-interested">
+													<span class="interested-text">70k+ interested Geeks </span>
+												</div>
+											</div>
+											<div class="grid2-div">
+												<strong class="grid2-description-heading">Applied Data Science - Live </strong>
+											</div>
+											<div class="grid3">
+												<div class="grid3-course-explore">
+												<button class="explore-course">Explore</button> 
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class="new-card-layout">
+							<div class="new-content-wrapper"> 
+								<a href="https://www.geeksforgeeks.org/courses/gate-2026-csit">
+									<div class="new-card-content">
+										<div class="new-card-thumbnail">
+											  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20241228104608348548/GATE-CSE--2026-live-online-classes.webp" alt="course-img" class="card-image" loading="lazy">
+										</div>
+										<div class="card-description-grid">
+											<div class="grid1">
+												<div class="grid1-interested">
+													<span class="interested-text">36k+ interested Geeks </span>
+												</div>
+											</div>
+											<div class="grid2-div">
+												<strong class="grid2-description-heading">GATE CSE 2026 Online Course [Live Weekday Classes ] </strong>
+											</div>
+											<div class="grid3">
+												<div class="grid3-course-explore">
+												<button class="explore-course">Explore</button> 
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div></div></div></div></div></div></div>    <aside id="text-18" class="widget widget_text">
+		<div class="textwidget">
+					<div id='GFG_AD_Desktop_RightSideBar_BTF_Sticky_300x250' style='min-width: 300px;margin-bottom:10px'></div>
+			<div id='GFG_AD_Desktop_RightSideBar_Docked_160x600' style='min-width: 160px;'></div><div id='GFG_AD_Desktop_RightSideBar_BTFdocked_300x600' style='min-width: 300px;'></div>
+			</aside>
+
+	<aside id="text-20" class="widget widget_text">
+		<div class="textwidget">
+		 </div>
+	</aside>
+</div>
+
+                <div id="user-personal-note" style="display: none;"></div>
+        </div>
+    </div>
+    <section class="disqus-section">
+        <div class="article-page_flex">
+            <div class="leftBar">
+            </div>
+        </div>
+    </section>
+</div>
+
+<div id="video-popup" style="display:none"></div>
+
+<link rel="stylesheet" href='https://www.geeksforgeeks.org/wp-content/themes/iconic-one/css/articleList.min.css?ver=1.9'>
+
+
+
+
+	</div><div id="displayModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="error-message"></div>
+        <div class="modal-body" id="dmBody">
+            <div id="modal-dm-content"></div>
+              <div class="modal-overlay" aria-hidden=true>
+                <span class="loader__animation"></span>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>  
+  <div id="displayModalBackdrop" class="backdrop"></div>
+  <footer class="gfg-footer" id="gfg-footer">
+      <div class="footer-wrapper">
+          <div class="footer-wrapper_branding">
+              <a class="footer-wrapper_branding-anchor" aria-label="GeeksforGeeks Logo" href="https://www.geeksforgeeks.org/">
+                <img loading="lazy" style="height: 32px; width: 230px; max-width: fit-content;" class="footer-wrapper_branding-nlogo" src="https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png" alt="geeksforgeeks-footer-logo"/>
+              </a>
+              <div class="footer-wrapper_branding-address">
+                  <div class="address_section">
+                    <div class="address-icon-wrapper">
+                      <i class="gfg-icon gfg-icon_pin"></i> 
+                    <div class="address_div">
+                     
+                      <div class="address_name">Corporate & Communications Address:</div>
+                                            <div class="footer-address">
+                      A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)                    </div>
+                    </div>
+                  </div>
+                     
+                      <div class="address-icon-wrapper">
+                      <i class="gfg-icon gfg-icon_pin"></i>  
+                      <div class="address_div">
+                        <div class="address_name">Registered Address:</div>
+                        K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305                      </div>
+                    </div>
+                                      </div>
+              </div>
+              <div
+              class="footer-wrapper_branding-app-wrapper"
+              style="display:flex;
+              flex-direction:row;
+              gap:12px;
+              align-items:inherit;
+              max-height:53px;">
+              <div class="footer-wrapper_branding-social">
+                  <a href="https{
+        }
+//in.linkedin.com/company/geeksforgeeks" rel="noopener noreferrer" aria-label="GeeksforGeeks LinkedIn" target="_blank">
+                      <div class="linkedin"></div>
+                  </a>
+                  <a href="https://www.instagram.com/geeks_for_geeks/" rel="noopener noreferrer" aria-label="GeeksforGeeks Instagram" target="_blank">
+                      <div class="instagram"></div>
+                  </a>
+                  <a href="https://twitter.com/geeksforgeeks" rel="noopener noreferrer" aria-label="GeeksforGeeks Twitter" target="_blank">
+                      <div class="twitter"></div>
+                  </a>
+                  <a href="https://www.facebook.com/geeksforgeeks.org/" rel="noopener noreferrer" aria-label="GeeksforGeeks Facebook" target="_blank">
+                      <div class="facebook"></div>
+                  </a>
+                  <a href="https://www.youtube.com/geeksforgeeksvideos" rel="noopener noreferrer" aria-label="GeeksforGeeks YouTube" target="_blank">
+                      <div class="youtube"></div>
+                  </a>
+              </div>
+              <div class="footer-wrapper_branding-app">
+                <a aria-label="GeeksforGeeks App Link" href="https://geeksforgeeksapp.page.link/gfg-app" target="_blank" ><img src="https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay.png" alt="GFG App on Play Store" id="gplay" loading="lazy"></a>
+                <a aria-label="GeeksforGeeks App Link" href="https://geeksforgeeksapp.page.link/gfg-app" target="_blank"><img src="https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore.png" alt="GFG App on App Store" id="appstore" loading="lazy"></a>
+              </div>
+            </div>
+          </div>
+        <div class="all-footer-information">
+          <div class="footer-wrapper_links" style="justify-content: space-between; text-align: -webkit-left;"><ul class="footer-wrapper_links-list" ><li>Company</li><li><a href=https://www.geeksforgeeks.org/about/>About Us</a></li><li><a href=https://www.geeksforgeeks.org/legal/>Legal</a></li><li><a href=https://www.geeksforgeeks.org/legal/privacy-policy/>Privacy Policy</a></li><li><a href=https://geeksforgeeks.zohorecruit.in/careers>Careers</a></li><li><a href=https://www.geeksforgeeks.org/about/contact-us/>Contact Us</a></li><li><a href=https://www.geeksforgeeks.org/gfg-corporate-solution/>Corporate Solution</a></li><li><a href=https://www.geeksforgeeks.org/campus-training-program/>Campus Training Program</a></li></ul><ul class="footer-wrapper_links-list" ><li>Explore</li><li><a href=https://www.geeksforgeeks.org/problem-of-the-day>POTD</a></li><li><a href=https://practice.geeksforgeeks.org/events/rec/job-a-thon/>Job-A-Thon</a></li><li><a href=https://www.geeksforgeeks.org/connect/>Connect</a></li><li><a href=https://www.geeksforgeeks.org/category/blogs/?type=recent>Blogs</a></li><li><a href=https://www.geeksforgeeks.org/nation-skill-up/>Nation Skill Up</a></li></ul><ul class="footer-wrapper_links-list" ><li>Tutorials</li><li><a href=https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/>Programming Languages</a></li><li><a href=https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/>DSA</a></li><li><a href=https://www.geeksforgeeks.org/web-tech/web-technology/>Web Technology</a></li><li><a href=https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/>AI, ML & Data Science</a></li><li><a href=https://www.geeksforgeeks.org/devops/devops-tutorial/>DevOps</a></li><li><a href=https://www.geeksforgeeks.org/gate/gate-exam-tutorial/>CS Core Subjects</a></li><li><a href=https://www.geeksforgeeks.org/gate/gate-exam-tutorial/>GATE</a></li><li><a href=httpsgfg-academy/geeksforgeeks-school/>School Subjects</a></li><li><a href=https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/>Software and Tools</a></li></ul><ul class="footer-wrapper_links-list" ><li>Courses</li><li><a href=https://www.geeksforgeeks.org/courses/category/machine-learning-data-science>IBM Certification</a></li><li><a href=https://www.geeksforgeeks.org/courses/category/dsa-placements>DSA and Placements</a></li><li><a href=https://www.geeksforgeeks.org/courses/category/development-testing>Web Development</a></li><li><a href=https://www.geeksforgeeks.org/courses/category/machine-learning-data-science>Data Science</a></li><li><a href=https://www.geeksforgeeks.org/courses/category/programming-languages>Programming Languages</a></li><li><a href=https://www.geeksforgeeks.org/courses/category/cloud-devops>DevOps & Cloud</a></li><li><a href=https://www.geeksforgeeks.org/courses/category/gate>GATE</a></li><li><a href=https://www.geeksforgeeks.org/courses/category/trending-technologies/>Trending Technologies</a></li></ul><ul class="footer-wrapper_links-list" ><li>Offline Centers</li><li><a href=https://www.geeksforgeeks.org/courses/offline-courses?city=noida>Noida</a></li><li><a href=https://www.geeksforgeeks.org/courses/offline-courses?city=bengaluru>Bengaluru</a></li><li><a href=https://www.geeksforgeeks.org/courses/offline-courses?city=pune>Pune</a></li><li><a href=https://www.geeksforgeeks.org/courses/offline-courses?city=hyderabad>Hyderabad</a></li><li><a href=https://www.geeksforgeeks.org/courses/offline-courses?city=patna>Patna</a></li></ul><ul class="footer-wrapper_links-list" ><li>Preparation Corner</li><li><a href=https://www.geeksforgeeks.org/interview-prep/interview-corner/>Interview Corner</a></li><li><a href=https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/>Aptitude</a></li><li><a href=https/www.geeksforgeeks.org/aptitude/puzzles/>Puzzles</a></li><li><a href=https://www.geeksforgeeks.org/courses/gfg-160-series>GfG 160</a></li><li><a href=https://www.geeksforgeeks.org/system-design/system-design-tutorial/>System Design</a></li></ul></div>        </div> 
+      </div>
+            
+
+<div class="footer-strip" >
+          <div class="copyright">
+              <a href="https://www.geeksforgeeks.org/" rel="noopener noreferrer" target="_blank">@GeeksforGeeks, Sanchhaya Education Private Limited</a><span>, <a href="https://www.geeksforgeeks.org/copyright-information/">All rights reserved</a></span>
+          </div>
+          <div class="social-links">
+          </div>
+      </div>
+  </footer>
+</div><div class="lightbox-target">
+   <img id="lightbox-image" src="" alt="Lightbox"/>
+   <span class="lightbox-close"></span>
+</div>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+
+        <div class="improve-modal--overlay" style="display: none;">
+            <div class="improve-modal--improvement" status="locked">
+                <div class="improve-modal--improve-header">
+                    <div class="improve-header-fst-child">Improvement</div>
+                    <div class="improve-header-sec-child">
+                        <i class="gfg-icon improve-cross-icon"></i>
+                    </div>
+                </div>
+                <div class="locked-status--impove-modal">
+                    <div class="improve-modal--improve-content error-message"></div>                    
+                    <div class="improve-modal--improve-bottom">
+                        <button class="improve-bottom-btn" type="button">Suggest changes</button>
+                    </div>
+                </div>
+                <div class="unlocked-status--improve-modal-content">
+                  <div class="suggest-change_wrapper">
+                    <div class="suggest-change-content_wrapper">
+                      <div class="suggest-change">Suggest Changes</div>
+                      <div class="suggest-changes-about">Help us improve. Share your suggestions to enhance the article. Contribute your expertise and make a difference in the GeeksforGeeks portal.</div>
+                    </div>
+                    <div class="suggest-change-icon_wrapper">
+                      <img loading="lazy" class="suggest-change-icon" src="https://media.geeksforgeeks.org/auth-dashboard-uploads/suggestChangeIcon.png" alt="geeksforgeeks-suggest-icon"/>
+                    </div>
+                  </div>
+                  <div class="create-improvement_wrapper">
+                    <div class="create-improvement-content_wrapper">
+                      <div class="create-improvement">Create Improvement</div>
+                      <div class="create-improvements-about">Enhance the article with your expertise. Contribute to the GeeksforGeeks community and help create better learning resources for all.</div>
+                    </div>
+                    <div class="create-improvement-icon_wrapper">
+                    <img loading="lazy" class="create-improvement-icon" src="https://media.geeksforgeeks.org/auth-dashboard-uploads/createImprovementIcon.png" alt="geeksforgeeks-improvement-icon"/>
+                    </div>
+                  </div>
+                  <div class="error-status"></div>
+                </div>
+            </div>
+            <div class="improve-modal--suggestion" style="display: none;">
+                <div class="improve-modal--improve-header">
+                  <div class="left-arrow-icon_suggest_wrapper">
+                    <div class="left-arrow-icon_wrapper">
+                      <i class="gfg-icon improve-left-arrow-icon"></i>
+                    </div>
+                    <div class="improve-header-fst-child">Suggest Changes</div>
+                  </div>
+                  <div class="improve-header-sec-child">
+                        <i class="gfg-icon improve-cross-icon"></i>
+                  </div>
+                </div>
+                <div class="suggestion-modal-section">
+                        <div class="suggestion-section">min 4 words, max Words Limit:1000</div>
+                        <div id="suggestion-section-textarea">
+                        </div>
+                        <input type="hidden" name="g-recaptcha-suggestion-response" id="g-recaptcha-response-suggestion-form">
+                        <div class="thank-you-message" style="text-align: center; display:none">
+                              <h2>Thank You!</h2>
+                              <div class="thank-you-message-content">Your suggestions are valuable to us.</div>
+                        </div>
+                </div> 
+                <div class="improve-modal--improve-bottom suggestion-btn">
+                    <p><span id="suggestion-modal-alert" style="display: none;"></span></p>
+                    <button class="suggest-bottom-btn" type="button"></button>
+                </div>
+            </div>
+            <a href="#" style="visibility:hidden" class="create-improvement-redirection-to-write" target="_blank"></a>
+        </div>
+        
+    
+
+
+
+  
+<div id="GFG_AD_Desktop_Stickyunit_1x1"></div>
+
+<div class="popup-container">
+        <div id="popup" accesskey="" class="popup-main">
+            <div class="popup-heading">
+                <h2>What kind of Experience do you want to share?</h2>
+                <div class="close-icon share-experience-modal-close"></div>
+            </div>
+            <div class="experience-card">
+                <a class="exp-card5" href= "https://write.geeksforgeeks.org/posts-new?cid=e8fc46fe-75e7-4a4b-be3c-0c862d655ed0" target="_blank">
+                    <div class="icon5">
+                        <div class="icon5-image"></div>
+                    </div>
+                    <div class="exp-card5-text">
+                        <span style="color: #000;">Interview Experiences</span>
+                    </div>
+                </a>
+                <a class="exp-card1" href="https://write.geeksforgeeks.org/posts-new?cid=82536bdb-84e6-4661-87c3-e77c3ac04ede" target="_blank">
+                    <div class="icon1">
+                        <div class="icon1-image"></div>
+                    </div>
+                    <div class="exp-card1-text">
+                        <span style="color: #000;">Admission Experiences</span>
+                    </div>
+                </a>
+                <a class="exp-card6" href= "https://write.geeksforgeeks.org/posts-new?cid=5219b0b2-7671-40a0-9bda-503e28a61c31" target="_blank">
+                    <div class="icon6">
+                        <div class="icon6-image"></div>
+                    </div>
+                    <div class="exp-card6-text">
+                        <span style="color: #000;">Career Journeys</span>
+                    </div>
+                </a>
+                <a class="exp-card2" href="https://write.geeksforgeeks.org/posts-new?cid=22ae3354-15b6-4dd4-a5b4-5c7a105b8a8f" target="_blank">
+                    <div class="icon2">
+                        <div class="icon2-image"></div>
+                    </div>
+                    <div class="exp-card2-text">
+                        <span style="color: #000;">Work Experiences</span>
+                    </div>
+                </a>
+                <a class="exp-card3" href= "https://write.geeksforgeeks.org/posts-new?cid=c5e1ac90-9490-440a-a5fa-6180c87ab8ae" target="_blank">
+                    <div class="icon3">
+                        <div class="icon3-image"></div>
+                    </div>
+                    <div class="exp-card3-text">
+                        <span style="color: #000;">Campus Experiences</span>
+                    </div>
+                </a>
+                <a class="exp-card4" href= "https://write.geeksforgeeks.org/posts-new?cid=5ebb8fe9-b980-4891-af07-f2d62a9735f2" target="_blank">
+                    <div class="icon4">
+                        <div class="icon4-image"></div>
+                    </div>
+                    <div class="exp-card4-text">
+                        <span style="color: #000;">Competitive Exam Experiences</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div><div id="displayModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="error-message"></div>
+        <div class="modal-body" id="dmBody">
+            <div id="modal-dm-content"></div>
+              <div class="modal-overlay" aria-hidden=true>
+                <span class="loader__animation"></span>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>  
+  <div id="displayModalBackdrop" class="backdrop"></div>
+  <footer class="gfg-footer" id="gfg-footer">
+      <div class="footer-wrapper">
+          <div class="footer-wrapper_branding">
+              <a class="footer-wrapper_branding-anchor" aria-label="GeeksforGeeks Logo" href="https://www.geeksforgeeks.org/">
+                <img loading="lazy" style="height: 32px; width: 230px; max-width: fit-content;" class="footer-wrapper_branding-nlogo" src="https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png" alt="geeksforgeeks-footer-logo"/>
+              </a>
+              <div class="footer-wrapper_branding-address">
+                  <div class="address_section">
+                    <div class="address-icon-wrapper">
+                      <i class="gfg-icon gfg-icon_pin"></i> 
+                    <div class="address_div">
+                     
+                      <div class="address_name">Corporate & Communications Address:</div>
+                                            <div class="footer-address">
+                      A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)                    </div>
+                    </div>
+                  </div>
+                     
+                      <div class="address-icon-wrapper">
+                      <i class="gfg-icon gfg-icon_pin"></i>  
+                      <div class="address_div">
+                        <div class="address_name">Registered Address:</div>
+                        K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305                      </div>
+                    </div>
+                                      </div>
+              </div>
+              <div
+              class="footer-wrapper_branding-app-wrapper"
+              style="display:flex;
+              flex-direction:row;
+              gap:12px;
+              align-items:inherit;
+              max-height:53px;">
+              <div class="footer-wrapper_branding-social">
+                  <a href="https://in.linkedin.com/company/geeksforgeeks" rel="noopener noreferrer" aria-label="GeeksforGeeks LinkedIn" target="_blank">
+                      <div class="linkedin"></div>
+                  </a>
+                  <a href="https://www.instagram.com/geeks_for_geeks/" rel="noopener noreferrer" aria-label="GeeksforGeeks Instagram" target="_blank">
+                      <div class="instagram"></div>
+                  </a>
+                  <a href="https://twitter.com/geeksforgeeks" rel="noopener noreferrer" aria-label="GeeksforGeeks Twitter" target="_blank">
+                      <div class="twitter"></div>
+                  </a>
+                  <a href="https://www.facebook.com/geeksforgeeks.org/" rel="noopener noreferrer" aria-label="GeeksforGeeks Facebook" target="_blank">
+                      <div class="facebook"></div>
+                  </a>
+                  <a href="https://www.youtube.com/geeksforgeeksvideos" rel="noopener noreferrer" aria-label="GeeksforGeeks YouTube" target="_blank">
+                      <div class="youtube"></div>
+                  </a>
+              </div>
+              <div class="footer-wrapper_branding-app">
+                <a aria-label="GeeksforGeeks App Link" href="https://geeksforgeeksapp.page.link/gfg-app" target="_blank" ><img src="https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay.png" alt="GFG App on Play Store" id="gplay" loading="lazy"></a>
+                <a aria-label="GeeksforGeeks App Link" href="https://geeksforgeeksapp.page.link/gfg-app" target="_blank"><img src="https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore.png" alt="GFG App on App Store" id="appstore" loading="lazy"></a>
+              </div>
+            </div>
+          </div>
+        <div class="all-footer-information">
+          <div class="footer-wrapper_links" style="justify-content: space-between; text-align: -webkit-left;"><ul class="footer-wrapper_links-list" ><li>Company</li><li><a href="https://www.geeksforgeeks.org/about/">About Us</a></li><li><a href="https://www.geeksforgeeks.org/legal/">Legal</a></li><li><a href="https://www.geeksforgeeks.org/legal/privacy-policy/">Privacy Policy</a></li><li><a href="https://geeksforgeeks.zohorecruit.in/careers">Careers</a></li><li><a href="https://www.geeksforgeeks.org/about/contact-us/">Contact Us</a></li><li><a href="https://www.geeksforgeeks.org/gfg-corporate-solution/">Corporate Solution</a></li><li><a href="https://www.geeksforgeeks.org/campus-training-program/">Campus Training Program</a></li></ul><ul class="footer-wrapper_links-list" ><li>Explore</li><li><a href="https://www.geeksforgeeks.org/problem-of-the-day">POTD</a></li><li><a href="https://practice.geeksforgeeks.org/events/rec/job-a-thon/">Job-A-Thon</a></li><li><a href="https://www.geeksforgeeks.org/connect/">Connect</a></li><li><a href="https://www.geeksforgeeks.org/category/blogs/?type=recent">Blogs</a></li><li><a href="https://www.geeksforgeeks.org/nation-skill-up/">Nation Skill Up</a></li></ul><ul class="footer-wrapper_links-list" ><li>Tutorials</li><li><a href="https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/">Programming Languages</a></li><li><a href="https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/">DSA</a></li><li><a href="https://www.geeksforgeeks.org/web-tech/web-technology/">Web Technology</a></li><li><a href="https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/">AI, ML & Data Science</a></li><li><a href="https://www.geeksforgeeks.org/devops/devops-tutorial/">DevOps</a></li><li><a href="https://www.geeksforgeeks.org/gate/gate-exam-tutorial/">CS Core Subjects</a></li><li><a href="https://www.geeksforgeeks.org/gate/gate-exam-tutorial/">GATE</a></li></ul></div>
+      </div>
+
+<div class="footer-strip" >
+          <div class="copyright">
+              <a href="https://www.geeksforgeeks.org/" rel="noopener noreferrer" target="_blank">@GeeksforGeeks, Sanchhaya Education Private Limited</a><span>, <a href="https://www.geeksforgeeks.org/copyright-information/">All rights reserved</a></span>
+          </div>
+          <div class="social-links">
+          </div>
+      </div>
+  </footer>
+</div><div class="lightbox-target">
+   <img id="lightbox-image" src="" alt="Lightbox"/>
+   <span class="lightbox-close"></span>
+</div>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+<div id="GFG_AD_Desktop_Stickyunit_1x1"></div>
+<link rel='stylesheet' href="https://www.geeksforgeeks.org/wp-content/themes/iconic-one/css/gfgnotification.min.css?ver=1.2" type='text/css' >
+</body>
+</html>
